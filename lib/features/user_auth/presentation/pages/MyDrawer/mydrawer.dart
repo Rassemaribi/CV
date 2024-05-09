@@ -82,11 +82,19 @@ class MyDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Cv', style: TextStyle(fontSize: 20, color: Colors.white)),
+              title: Text('Cv PDF', style: TextStyle(fontSize: 20, color: Colors.white)),
               leading: Icon(Icons.dashboard, color: Colors.white),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/cv');
+              },
+            ),
+            ListTile(
+              title: Text('parameter', style: TextStyle(fontSize: 20, color: Colors.white)),
+              leading: Icon(Icons.settings, color: Colors.white),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/para');
               },
             ),
 

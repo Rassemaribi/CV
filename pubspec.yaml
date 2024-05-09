@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   shared_preferences: ^2.2.2
+  photo_view:
   flutter:
     sdk: flutter
   carousel_slider:
@@ -57,6 +58,15 @@ dependencies:
   path_provider: ^2.0.3
   syncfusion_flutter_pdfviewer: ^22.2.8
   flutter_flip_card: ^0.0.6
+  firebase_database:
+  sqflite:
+  snippet_coder_utils:
+  provider: ^5.0.0
+  flutter_svg:
+  flutter_spinkit:
+  flutter_staggered_animations:
+  google_fonts:
+
 
 
 dev_dependencies:

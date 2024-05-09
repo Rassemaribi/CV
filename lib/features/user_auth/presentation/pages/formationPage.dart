@@ -46,6 +46,10 @@ class FormationCard extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
       padding: EdgeInsets.all(16.0),
       decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.teal, // Couleur de la bordure
+          width: 2.0, // Épaisseur de la bordure
+        ),
         color: Colors.white,
         borderRadius: BorderRadius.circular(10.0),
         boxShadow: [
@@ -173,7 +177,7 @@ class FormationPage extends StatelessWidget {
     Formation(
       date: 'Juin 2021 - Juillet 2021',
       title: 'Smart Ways Innovations',
-      subtitle: 'Développement mobile',
+      subtitle: 'mobile',
       description:
       'J\'ai fait une formation de développement mobile avec Android Studio pour acquérir les connaissances et les compétences nécessaires pour développer des applications Android de qualité professionnelle, utilisant des outils tels que Android Studio, les bibliothèques de développement Android (Android SDK) et les dernières technologies pour créer des interfaces utilisateur.',
       logoPath: 'images/android.png',
@@ -183,7 +187,7 @@ class FormationPage extends StatelessWidget {
     Formation(
       date: 'Juin 2021 - Juillet 2021',
       title: 'Smart Ways Innovations',
-      subtitle: 'Intelligence artificielle',
+      subtitle: 'IA',
       description:
       'J\'ai fait une formation de IA avec Jupyter pour acquérir les connaissances et les compétences nécessaires pour utiliser les outils de programmation de Jupyter pour développer des modèles d\'IA et les utiliser pour résoudre des problèmes concrets.',
       logoPath: 'images/python.png',
@@ -203,7 +207,7 @@ class FormationPage extends StatelessWidget {
     Formation(
       date: 'Août 2021 - Octobre 2021',
       title: 'Smart Ways Innovations',
-      subtitle: 'Développement web',
+      subtitle: 'web',
       description:
       'J\'ai fait une formation Anguler pour acquérir les connaissances et les compétences nécessaires pour utiliser le Framework Anguler pour développer des applications web riches et dynamiques. J\'ai l\'occasion de mettre en pratique mes compétences en utilisant les composants, les directives, les services et les modules d\'Anguler pour créer des applications web modernes avec une architecture solide et des performances élevées.',
       logoPath: 'images/angular.png',

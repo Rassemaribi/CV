@@ -66,7 +66,7 @@ class PositionPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      "Appuyez sur l'icon pour voir l'emplacement",
+                      "Appuyez sur l'icon pour voir l'emplacemet",
                       style: TextStyle(fontSize: 16, color: Colors.red, fontWeight: FontWeight.w800), // Mettre le texte en rouge et en gras
                     ),
                   ],

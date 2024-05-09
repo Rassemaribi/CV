@@ -13,7 +13,7 @@ class ParcoursAcademiquePage extends StatelessWidget {
         title: Text('Parcours Académique',style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.teal,
       ),
-      drawer: MyDrawer(), 
+      drawer: MyDrawer(),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
         child: Column(
@@ -48,12 +48,16 @@ class ParcoursAcademiquePage extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 8.0),
       decoration: BoxDecoration(
         color: Colors.grey[200], // Gris clair
+        border: Border.all(
+          color: Colors.teal, // Couleur de la bordure
+          width: 2.0, // Épaisseur de la bordure
+        ),
         borderRadius: BorderRadius.circular(12.0),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 2,
-            blurRadius: 5,
+            blurRadius: 10,
             offset: Offset(0, 3),
           ),
         ],
