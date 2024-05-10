@@ -69,6 +69,17 @@ class _MyAppState extends State<MyApp> {
     '/para': (context) => ParameterPage(),
   };
 
+  bool isLoading = true;
+
+
+
+  void loadData() async {
+    await Future.delayed(Duration(seconds: 5));
+    setState(() {
+      isLoading = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -76,7 +87,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Firebase',
       theme: GlobalParams.themeActuel.getTheme(),
       routes: routes,
-      home: StreamBuilder<User?>(
+      home:isLoading ? SplashScreen() : StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
@@ -92,6 +103,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    loadData();
     GlobalParams.themeActuel.addListener(() {
       setState(() {});
     });
