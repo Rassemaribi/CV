@@ -126,6 +126,8 @@ flutter:
     - images/english_flag.png
     - images/french_flag.png
     - images/arabic_flag.png
+    - images/fod.jpeg
+    - images/logofod.png
 
 
   # To add assets to your application, add an assets section, like this:

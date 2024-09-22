@@ -52,6 +52,17 @@ class StagePage extends StatelessWidget {
               width: 400,
               height: 500,
             ),
+            SizedBox(height: 20.0),
+            _buildStage(
+              'images/logofod.png',
+              'Sfax, Tunis | 07/2024 - 08/2024',
+              'Projet',
+              'Mise en place d\'une application web pour le suivi et la gestion des équipements informatiques, avec une fonctionnalité de recommandation intelligente pour optimiser le parc matériel. Intitulé < Parc Informatique >, le projet vise à garantir une utilisation optimale des ressources tout en assurant un suivi précis et efficace des équipements.',
+              'Docker, Kubernetes, Microsoft Azure, FastAPI, IA, Spring Boot, Angular',
+              'images/fod.jpeg', // Image correcte pour l'attestation
+              width: 400,
+              height: 500,
+            ),
           ],
         ),
       ),
@@ -82,8 +93,12 @@ class StagePage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          title.endsWith('.png') ? Image.asset(title, height: 150) : Text(title,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue)),
+          title.endsWith('.png')
+              ? Image.asset(title, height: 150)
+              : Text(
+            title,
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue),
+          ),
           SizedBox(height: 8.0),
           Text(
             location,
